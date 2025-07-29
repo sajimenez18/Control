@@ -1,16 +1,21 @@
 // 
+//Importar archivo js header
+import {header} from "./components/header/headerComponent.js"
 function seccion(){
 
-    //aca los objetos ya existen
-    //document es un objeto y createElement es un metodo
+    //Aca los objetos ya existen
+    //Document es un objeto y createElement es un metodo
     let contenedor = document.createElement('contenedor');
+
+    //Se agrega el header al contenedor
+    contenedor.appendChild(header());
 
     let h1 = document.createElement('h1');
     //Solo funciona con etiquetas tipo texto (inner crea)
     h1.innerText = "Hola mundo";
     //Crear clase al texto (Cualquier tipo de elemento creado por el metodo createElement)
     h1.className = "titulo";
-    // el . llama a metodos de objeto
+    // el '.' llama a metodos de objeto
     contenedor.appendChild(h1);
 
     //Creacion de parrafo
@@ -25,19 +30,22 @@ function seccion(){
     Habra error con las variables si se repiten su nombre
     */
 
-
     return contenedor;
 
     /*
     Agrega lo que se ve
-    Se agrega en el doom
+    Se agrega en el dom
     document.body.appendChild(contenedor);
 
+    Probando si el proyecto corre por consola
     console.log("Hola mundo");
     */
+
+    seccion.appendChild((seccion1));
+    return seccion;
 }
 
-//Forma externa de agregarlo al Doom
+//Forma externa de agregarlo al dom
 document.body.appendChild(seccion());
 
 // seccion();
