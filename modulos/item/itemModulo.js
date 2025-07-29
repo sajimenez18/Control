@@ -7,7 +7,7 @@ export function item(){
     titulo.innerText = "Snoopy";
 
     let img = document.createElement('img');
-    img.src = '../../assets/snoopy.png';
+    img.src = 'assets/snoopy.png';
     img.className = "snoopy";
 
     let descripcion = document.createElement('p');
