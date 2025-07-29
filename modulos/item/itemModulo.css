@@ -1,5 +1,25 @@
 .item {
-    width: 20rem;
-    height: 20rem;
-    background-color: red;
+    width: 25rem;
+    height: 30rem;
+    background-color: rgb(171, 201, 240);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    align-items: center;
+    margin: auto;
+    justify-items: center;
+
+    border-radius: 10px;
+    color: rgb(6, 5, 49);
+}
+
+.snoopy {
+    width: 180px;
+}
+
+.descrip {
+    width: 180px;
+    font-family: sans-serif;
 }
