@@ -1,21 +1,20 @@
-export function item(){
+export function item(titulo,urlImg,descripcion){
 
     let item = document.createElement('div');
     item.className = "item";
-
-    let titulo = document.createElement('h1');
-    titulo.innerText = "Snoopy";
+    item.textContent = titulo;
 
     let img = document.createElement('img');
-    img.src = 'assets/snoopy.png';
-    img.className = "snoopy";
-
-    let descripcion = document.createElement('p');
-    descripcion.innerText = "Encontraste a Snoopy fan de la música; buenos gustos músicales";
-    descripcion.className = "descrip";
-    
-    item.appendChild(titulo);
+    img.src = urlImg;
+    img.className = "img";
     item.appendChild(img);
-    item.appendChild(descripcion);
+
+    //2 parametros, string, accion
+    item.addEventListener('click', ()=>{
+        item.classList.add("verde");
+        let rHeader = document.querySelector('.header');
+        rHeader.classList.add("ocultar");
+    });
+
     return item;
 }

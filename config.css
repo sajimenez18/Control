@@ -12,3 +12,7 @@ html {
 .titulo {
     color: rgb(10, 10, 85);
 }
+
+.ocultar{
+    display: none;
+}

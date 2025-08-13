@@ -15,11 +15,18 @@
     color: rgb(6, 5, 49);
 }
 
-.snoopy {
-    width: 180px;
+.img {
+    width: 50px;
 }
 
 .descrip {
     width: 180px;
     font-family: sans-serif;
+}
+.verde {
+    background-color: green;
+}
+
+.ocultar{
+    display: none;
 }
