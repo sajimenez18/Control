@@ -1,9 +1,12 @@
-.seccion-1{
+.section1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
 
+    height: auto;
+
     margin-top: 2rem;
+    margin-bottom: 2rem;
     justify-items: center;
 }

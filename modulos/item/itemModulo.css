@@ -1,6 +1,6 @@
 .item {
-    width: 25rem;
-    height: 30rem;
+    width: 30rem;
+    height: 40rem;
     background-color: rgb(171, 201, 240);
 
     display: grid;
@@ -16,17 +16,18 @@
 }
 
 .img {
-    width: 50px;
+    width: 100px;
+    margin-bottom: 20%;
 }
 
-.descrip {
-    width: 180px;
-    font-family: sans-serif;
-}
-.verde {
-    background-color: green;
+.desc{
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    font-size: 1rem;
 }
 
-.ocultar{
-    display: none;
+.valor {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
 }

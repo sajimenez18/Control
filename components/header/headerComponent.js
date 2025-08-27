@@ -6,7 +6,7 @@ function header(){
     //titulo
     let izq = document.createElement('h3');
     izq.className = "titulo";
-    izq.innerText = "Stephs";
+    izq.innerText = "Tienda de Tefy ^^";
 
     //div
     let icon = document.createElement('div');
